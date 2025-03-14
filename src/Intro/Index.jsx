@@ -10,7 +10,7 @@ import frtitle from '../assets/force_mage-title.png';
 import cultural from "../assets/CULTURALLOGO2025.png";
 import sports from "../assets/OJUS SPORTS 2024 FINAL_r6.png"
 import img from '../assets/img.jpg';
-import video from '../assets/sports1.mp4';
+
 import {
   MDBContainer,
   MDBCol,

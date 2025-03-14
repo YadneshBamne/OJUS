@@ -1,0 +1,7 @@
+node_modules
+src/assets/nfs2.mp4
+src/assets/sports1.mp4
+src/assets/DODGEBALL.png
+backend/env/
+backend/__pycache__/
+backend/sports.csv

@@ -1,0 +1,217 @@
+/* In your CSS file (e.g., App.css) */
+/* In your CSS file (e.g., App.css) */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+:root {
+  --transform-value: -100%;
+  --animation-duration: 3s;
+  --animation-ease: ease-in-out;
+ 
+  
+}
+/* In your CSS file (e.g., App.css) */
+
+
+
+
+.gothic-text {
+  font-family: 'Sacremeto', cursive;
+  align-items: center;
+  margin-bottom: 90px;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+
+
+/* CSS */
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  
+  
+  white-space: nowrap;
+  cursor: pointer;
+position: absolute;
+right: 15%;
+margin-top: 200px;
+z-index: 10 !important;}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+/* Keyframes for curtain animation (both left and right curtains move) */
+@keyframes leftCurtainAnimation {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(var(--transform-value));
+  }
+}
+
+@keyframes rightCurtainAnimation {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(calc(-1 * var(--transform-value)));
+  }
+}
+
+@keyframes textRevealAnimation {
+  0% {
+      opacity: 0;
+      transform: translateY(100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* The container holding everything */
+.curtain-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  
+  background-size: cover;
+  color:black;
+  z-index: -1 !important;
+}
+
+/* Background div for the text */
+.curtain-container .background {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  z-index: -1; /* Make sure the background stays behind other divs */
+  opacity: 0;
+  color:black;
+  animation: textRevealAnimation var(--animation-duration) var(--animation-ease) forwards;
+}
+
+/* The left curtain that moves */
+.curtain-container .left-curtain {
+  position: fixed;
+  left: 0;
+  width: 50vw;
+  height: 100vh;
+  top: 0;
+  border: .25em solid #a90329;
+  background: linear-gradient(to right, #a90329 0%, #a90329 6%, #6d0019 10%, #a90329 14%, #a90329 20%, #6d0019 24%, #a90329 28%, #a90329 34%, #6d0019 38%, #a90329 42%, #a90329 48%, #6d0019 52%, #a90329 56%, #a90329 62%, #6d0019 66%, #a90329 70%, #a90329 76%, #6d0019 80%, #a90329 84%, #a90329 90%, #6d0019 94%, #a90329 98%);
+  z-index: 1; /* Curtain divs are above the background */
+  animation: leftCurtainAnimation 3s var(--animation-duration) var(--animation-ease) forwards;
+}
+
+/* The right curtain that moves */
+.curtain-container .right-curtain {
+  position: fixed;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  top: 0;
+  border: .25em solid #a90329;
+  background: linear-gradient(to right, #a90329 0%, #a90329 6%, #6d0019 10%, #a90329 14%, #a90329 20%, #6d0019 24%, #a90329 28%, #a90329 34%, #6d0019 38%, #a90329 42%, #a90329 48%, #6d0019 52%, #a90329 56%, #a90329 62%, #6d0019 66%, #a90329 70%, #a90329 76%, #6d0019 80%, #a90329 84%, #a90329 90%, #6d0019 94%, #a90329 98%);
+  z-index: 1; /* Curtain divs are above the background */
+  animation: rightCurtainAnimation 3s var(--animation-duration) var(--animation-ease) forwards;
+}
+/* Login.css */
+.signup-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.input-container label {
+  display: block;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}

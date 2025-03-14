@@ -10,7 +10,7 @@ import frtitle from '../assets/force_mage-title.png';
 import cultural from "../assets/CULTURALLOGO2025.png";
 import sports from "../assets/OJUS SPORTS 2024 FINAL_r6.png"
 import img from '../assets/img.jpg';
-
+// import video from '../assets/sports1.mp4';
 import {
   MDBContainer,
   MDBCol,
@@ -143,7 +143,7 @@ const Index = () => {
             <a href="/sports">
               <div className="card">
                 <div className="wrapper">
-                  <img src="https://res.cloudinary.com/divma6tu0/image/upload/v1741948975/dept%20logos/fpeihfsjnerizmyjzswv.png" className="cover-image" alt="Dark Rider Cover" />
+                  <img src="https://res.cloudinary.com/dfkkdv8et/image/upload/v1741980223/Ojus2025FinalLogo_oonqat.png" className="cover-image" alt="Dark Rider Cover" />
                 </div>
               </div>
             </a>
@@ -211,12 +211,12 @@ const Index = () => {
             {/* Column 1 */}
             <MDBCol lg={4} md={12} className="mb-4 mb-lg-0">
               <img
-                src="https://res.cloudinary.com/dfkkdv8et/image/upload/v1741931228/img_b1i8qb.jpg"
+                src="https://res.cloudinary.com/dfkkdv8et/image/upload/v1741981105/WhatsApp_Image_2025-03-15_at_01.05.14_f7e01922_iwffmz.jpg"
                 className="w-100 shadow-1-strong rounded mb-4"
                 alt="Boat on Calm Water"
               />
               <img
-                src="https://res.cloudinary.com/dfkkdv8et/image/upload/v1741931228/img_b1i8qb.jpg"
+                src="https://res.cloudinary.com/dfkkdv8et/image/upload/v1741981105/WhatsApp_Image_2025-03-15_at_01.05.14_70de6542_s0gygt.jpg"
                 className="w-100 shadow-1-strong rounded mb-4"
                 alt="Wintry Mountain Landscape"
               />
@@ -225,7 +225,7 @@ const Index = () => {
             {/* Column 2 */}
             <MDBCol lg={4} md={12} className="mb-4 mb-lg-0">
               <img
-                src="https://res.cloudinary.com/dfkkdv8et/image/upload/v1741931228/img_b1i8qb.jpg"
+                src="https://res.cloudinary.com/dfkkdv8et/image/upload/v1741981105/WhatsApp_Image_2025-03-15_at_01.05.13_5a0aa98c_ncfxip.jpg"
                 className="w-100 shadow-1-strong rounded mb-4"
                 alt="Mountains in the Clouds"
               />
@@ -256,7 +256,7 @@ const Index = () => {
       <footer className="footer">
         <div className="text-center p-3">
           <h7 className="text-body">
-            <a href="https://ojus-web-dev.vercel.app/" style={{ textDecoration: 'none', color: 'white' }} >OJUS WebDev 2k25❤️</a>
+            <a href="https://ojus-web-dev.vercel.app/" style={{ textDecoration: 'none', color: 'white' }} >OJUS WebDev 2k25❤</a>
           </h7>
         </div>
       </footer>
@@ -264,4 +264,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Index;

@@ -8,6 +8,7 @@
     background: #111;
     width: 100%;
     background-color: black !important;
+    padding: auto;
   }
   
   /* Styles for the ring and animation */

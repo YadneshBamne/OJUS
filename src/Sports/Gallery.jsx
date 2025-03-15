@@ -12,12 +12,12 @@ export default function Gallery() {
         {/* Column 1 */}
         <MDBCol lg={4} md={12} className="mb-4 mb-lg-0">
           <img
-            src="https://res.cloudinary.com/dyhby7bo9/image/upload/v1735142315/faywxp5afupys6mtypij.jpg"
+            src="https://res.cloudinary.com/dfkkdv8et/image/upload/v1741981105/WhatsApp_Image_2025-03-15_at_01.05.14_f7e01922_iwffmz.jpg"
             className="w-100 shadow-1-strong rounded mb-4"
             alt="Boat on Calm Water"
           />
           <img
-            src="https://res.cloudinary.com/dyhby7bo9/image/upload/v1735121312/gqn6cj6oagyimux4ziao.jpg"
+            src="https://res.cloudinary.com/dfkkdv8et/image/upload/v1741981105/WhatsApp_Image_2025-03-15_at_01.05.14_70de6542_s0gygt.jpg"
             className="w-100 shadow-1-strong rounded mb-4"
             alt="Wintry Mountain Landscape"
           />
@@ -26,7 +26,7 @@ export default function Gallery() {
         {/* Column 2 */}
         <MDBCol lg={4} md={12} className="mb-4 mb-lg-0">
           <img
-            src="https://res.cloudinary.com/dyhby7bo9/image/upload/v1735121311/pr98rop3vi0nbp0lxf2u.jpg"
+            src="https://res.cloudinary.com/dfkkdv8et/image/upload/v1741981105/WhatsApp_Image_2025-03-15_at_01.05.13_5a0aa98c_ncfxip.jpg"
             className="w-100 shadow-1-strong rounded mb-4"
             alt="Mountains in the Clouds"
           />

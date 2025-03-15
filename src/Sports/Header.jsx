@@ -8,12 +8,12 @@ import Cookies from "js-cookie";
 import { Link } from "react-router-dom";
 
 const images = [
-  { src: "https://res.cloudinary.com/dyhby7bo9/image/upload/v1734699274/OJUSPHOTOS/gftwej7iyf5d5eq64oqj.jpg", title: "Cricket", subtitle: "Sportsmanship" },
-  { src: "https://res.cloudinary.com/dyhby7bo9/image/upload/v1734699275/OJUSPHOTOS/qirhfbnkzjxfzaktkqf8.jpg", title: "Volleyball", subtitle: "Design" },
-  { src: "https://res.cloudinary.com/dyhby7bo9/image/upload/v1735207250/rt4qm7zeahzz0slcomzj.jpg", title: "Football", subtitle: "Design" },
+  { src: "https://res.cloudinary.com/dfkkdv8et/image/upload/v1741931228/image4copy_chg0qa.jpg", title: "Cricket", subtitle: "Sportsmanship" },
+  { src: "https://res.cloudinary.com/dfkkdv8et/image/upload/v1741931234/image3copy_jgmpyc.jpg", title: "Volleyball", subtitle: "Design" },
+  { src: "https://res.cloudinary.com/dfkkdv8et/image/upload/v1741931273/image1copy_ogecbx.jpg", title: "Football", subtitle: "Design" },
   { src: "https://res.cloudinary.com/dyhby7bo9/image/upload/v1735207250/zpwgjufcyf1j1wzrhuu6.jpg", title: "Football", subtitle: "Design" },
-  { src: "https://res.cloudinary.com/dyhby7bo9/image/upload/v1735207248/rti6jt2muxixfubevlhn.jpg", title: "Football", subtitle: "Design" },
-  { src: "https://res.cloudinary.com/dyhby7bo9/image/upload/v1735207250/puj356zzb428qvslvizs.jpg", title: "Football", subtitle: "Design" },
+  { src: "https://res.cloudinary.com/dfkkdv8et/image/upload/v1741931316/image2_zfiaiy.jpg", title: "Football", subtitle: "Design" },
+  { src: "https://res.cloudinary.com/dfkkdv8et/image/upload/v1741931318/image_opwf76.jpg", title: "Football", subtitle: "Design" },
   
 ];
 
@@ -146,7 +146,7 @@ const HeroSection = () => {
           ))}
         </div>
 <div className="Trophy">
-  <img src="https://res.cloudinary.com/dyhby7bo9/image/upload/v1734699280/OJUSPHOTOS/plsv5rvxqvjltqtslsvl.png"></img>
+  <img src="https://res.cloudinary.com/dfkkdv8et/image/upload/v1741931233/logo_zgh1yo.ico"></img>
 </div>
         <div className="arrows">
           <button onClick={handlePrev} className="prev">

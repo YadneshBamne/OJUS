@@ -209,8 +209,26 @@ center h2{
     }
     #team{
         display: grid;
-        margin: auto;
-        padding: auto;
+        place-items: center;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+    .team-box {
+        margin: 20px auto;
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .t-b-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .t-b-img img {
+        margin: 0 auto;
     }
     #nav img{
             height: 80px;
@@ -283,4 +301,35 @@ center h2{
   .t-b-text span {
     color: rgb(0, 0, 0);
   }
+
+.council-title {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.council-title h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .council-title h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .council-title h1 {
+    font-size: 1.5rem;
+  }
   
+  .council-title {
+    margin: 1.5rem 0;
+  }
+}
+

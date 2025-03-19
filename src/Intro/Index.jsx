@@ -62,7 +62,16 @@ const Index = () => {
   };
 
   const handleSportsClick = () => {
+  const videoUrl = "https://res.cloudinary.com/dfkkdv8et/video/upload/v1741932632/sports1_cmaini.mp4";
     if (videoRef.current) {
+      if (videoRef.current.src !== videoUrl) {
+        videoRef.current.src = videoUrl; // Change video source
+        videoRef.current.load(); // Reload the video
+      }
+      videoRef.current.onloadeddata = () => {
+        videoRef.current.play(); // Auto-play when video loads
+        setIsVideoPlaying(true); // Update state
+      };
       if (!isVideoPlaying) {
         videoRef.current.play();
       } else {
@@ -72,15 +81,29 @@ const Index = () => {
     }
   };
 
-  const sliderData = [
-    { name: 'Mike', title: 'web3 Developer', img: img },
-    { name: 'Samite', title: 'WordPress Developer', img: img },
-    { name: 'Hashi', title: 'Java Developer', img: img },
-    { name: 'Kaity', title: 'Web Developer', img: img },
-    { name: 'Lauren', title: 'PHP Developer', img: img },
-    { name: 'Ryan', title: 'SEO Developer', img: img },
-    { name: 'Dakes', title: 'SQL Developer', img: img },
-  ];
+  const handleCulturalClick = () => {
+    const videoUrl = "https://res.cloudinary.com/dth2rinzf/video/upload/cultural-vid_njabmn.mp4";
+  
+    if (videoRef.current) {
+      if (videoRef.current.src !== videoUrl) {
+        videoRef.current.src = videoUrl; // Change video source
+        videoRef.current.load(); // Reload the video
+      }
+      videoRef.current.onloadeddata = () => {
+        videoRef.current.play(); // Auto-play when video loads
+        setIsVideoPlaying(true); // Update state
+      };
+      if (!isVideoPlaying) {
+        videoRef.current.play();
+      } else {
+        videoRef.current.pause();
+      }
+      setIsVideoPlaying(!isVideoPlaying);
+    }
+  };
+  
+
+
 
   return (
     <div id="main">
@@ -180,8 +203,10 @@ const Index = () => {
             Sports
           </h2>
         </div>
-        <div className="elem" >
-          <h2>Culturals</h2>
+        <div className="elem" data-video="https://res.cloudinary.com/dth2rinzf/video/upload/cultural-vid_njabmn.mp4">
+          <h2 onClick={handleCulturalClick} style={{ cursor : 'pointer' }}>
+            Culturals 
+            </h2>
         </div>
 
         {/*         <div className="elem" data-video={video}>
@@ -211,45 +236,62 @@ const Index = () => {
             {/* Column 1 */}
             <MDBCol lg={4} md={12} className="mb-4 mb-lg-0">
               <img
-                src="https://res.cloudinary.com/dfkkdv8et/image/upload/v1741981105/WhatsApp_Image_2025-03-15_at_01.05.14_f7e01922_iwffmz.jpg"
+                src="https://res.cloudinary.com/dth2rinzf/image/upload/v1742421463/img2_zz82ol.jpg"
                 className="w-100 shadow-1-strong rounded mb-4"
                 alt="Boat on Calm Water"
               />
-              <img
-                src="https://res.cloudinary.com/dfkkdv8et/image/upload/v1741981105/WhatsApp_Image_2025-03-15_at_01.05.14_70de6542_s0gygt.jpg"
-                className="w-100 shadow-1-strong rounded mb-4"
-                alt="Wintry Mountain Landscape"
-              />
+ 
             </MDBCol>
 
             {/* Column 2 */}
             <MDBCol lg={4} md={12} className="mb-4 mb-lg-0">
               <img
-                src="https://res.cloudinary.com/dfkkdv8et/image/upload/v1741981105/WhatsApp_Image_2025-03-15_at_01.05.13_5a0aa98c_ncfxip.jpg"
+                src="https://res.cloudinary.com/dth2rinzf/image/upload/v1742421108/img_ild8wt.jpg"
                 className="w-100 shadow-1-strong rounded mb-4"
                 alt="Mountains in the Clouds"
               />
-              <img
-                src="https://res.cloudinary.com/dfkkdv8et/image/upload/v1741931228/img_b1i8qb.jpg"
-                className="w-100 shadow-1-strong rounded mb-4"
-                alt="Boat on Calm Water"
-              />
+
             </MDBCol>
 
             {/* Column 3 */}
             <MDBCol lg={4} md={12} className="mb-4 mb-lg-0">
               <img
-                src="https://res.cloudinary.com/dfkkdv8et/image/upload/v1741931228/img_b1i8qb.jpg"
+                src="https://res.cloudinary.com/dth2rinzf/image/upload/v1742423464/img6_j8jznx.jpg"
                 className="w-100 shadow-1-strong rounded mb-4"
                 alt="Waves at Sea"
               />
-              <img
-                src="https://res.cloudinary.com/dfkkdv8et/image/upload/v1741931228/img_b1i8qb.jpg"
-                className="w-100 shadow-1-strong rounded mb-4"
-                alt="Yosemite National Park"
-              />
+
             </MDBCol>
           </MDBRow>
+              {/* ADDITIONAL ROW WITH 3 MORE IMAGES */}
+    <MDBRow>
+      {/* Column 4 */}
+      <MDBCol lg={4} md={12} className="mb-4 mb-lg-0">
+        <img
+          src="https://res.cloudinary.com/dth2rinzf/image/upload/v1742423463/img4_eakcpj.jpg"
+          className="w-100 shadow-1-strong rounded mb-4"
+          alt="New Image 1"
+        />
+      </MDBCol>
+
+      {/* Column 5 */}
+      <MDBCol lg={4} md={12} className="mb-4 mb-lg-0">
+        <img
+          src="https://res.cloudinary.com/dth2rinzf/image/upload/v1742421463/img3_rnqagt.jpg"
+          className="w-100 shadow-1-strong rounded mb-4"
+          alt="New Image 2"
+        />
+      </MDBCol>
+
+      {/* Column 6 */}
+      <MDBCol lg={4} md={12} className="mb-4 mb-lg-0">
+        <img
+          src="https://res.cloudinary.com/dth2rinzf/image/upload/v1742423463/img5_tyzdbq.jpg"
+          className="w-100 shadow-1-strong rounded mb-4"
+          alt="New Image 3"
+        />
+      </MDBCol>
+    </MDBRow>
         </MDBContainer>
       </div>
 
